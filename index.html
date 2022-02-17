@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT FORM </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+          h1{
+              color: yellowgreen;
+          }
+          h2{
+              color: blue;
+          }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Payment Form</h1>
+    </header>
+    <div class="container">
+  <form action="">
+      <p style="color: red;">Required Fields are follwed by * </p>
+      <h2>Contact Information</h2>
+      <p>Name: * <input type="text" name="Name" required></p>
+      <fieldset>
+          <Legend>Gender * </Legend>
+      <p>
+          Male <input type="radio" name="gender" id="Male" required>
+          female <input type="radio" name="gender" id="female" required>
+      </p>
+    </fieldset>
+    <p>Address: <textarea name="Address" id="Address" cols="100" rows="8"></textarea></p>
+    <p>Email: *  <input type="email" name="" id="email" required></p>
+    <p>Pincode: *  <input type="number" name="number" id="number" required></p>
+    <h2>Payment information</h2>
+    <p>Bank type
+        <select name="Bank type" id="Bank type">
+            <option value="">Select a Bank Type</option>
+            <option value="HDFC">HDFC</option> 
+            <option value="SBI">SBI</option>
+            <option value="Axis Bank">Axis Bank </option>
+            <option value="Indian Bank">Indian Bank</option>
+            <option value="ICICI">ICICI</option>
+        </select>
+
+    </p>
+    <P>Card type: * 
+        <select name="Card type" id="card type" required>
+            <option value="">  select a card type  </option>
+            <option value="Visa">Visa</option>
+            <option value="Rupay">Rupay</option>
+            <option value="Mastercard">Mastercard</option>
+        </select>
+    </P>
+    <p>
+        Card Numper: *  <input type="number" name="" id="card number" required>
+    </p>
+    <p>
+        Expration Date: <input type="date" name="exp date" id="exp date">
+    </p>
+    <p>CVV: <input type="password" name="CVV" id="CVV"></p>
+    <input type="submit" value="Pay Now">
+  </form>
+</div>  
+</body>
+</html>
